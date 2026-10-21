@@ -1,0 +1,54 @@
+# Python environments, builds and caches
+.env/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.test-tmp/
+
+# Private configuration (templates remain version controlled)
+*.local.json
+.env
+.env.*
+!config/*.example.json
+*.pem
+*.key
+
+# Generated data and logs (directory placeholders remain version controlled)
+data/output/*
+!data/output/.gitkeep
+logs/*
+!logs/.gitkeep
+.run/
+*.log
+*.sqlite3
+*.db
+
+# Old root outputs, for users upgrading an existing checkout
+/case.csv
+/law.txt
+/result.txt
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local tooling
+.uv-cache/
+.tmp/
+tmp/
+temp/
